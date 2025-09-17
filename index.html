@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Shivesh Kumar - Cardiology Clinic</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .display-board {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 60px 80px;
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .display-board::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: linear-gradient(90deg, #4CAF50, #2196F3, #FF5722);
+        }
+
+        .emc-logo {
+            width: 180px;
+            height: 60px;
+            margin: 0 auto 40px;
+            background: linear-gradient(45deg, #4CAF50, #2196F3);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+
+        .doctor-name {
+            font-size: 3.2em;
+            font-weight: 700;
+            color: #1a365d;
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+        }
+
+        .qualification {
+            font-size: 1.4em;
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .designation {
+            font-size: 1.3em;
+            color: #4a5568;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .specialization {
+            font-size: 1.5em;
+            color: #2b6cb0;
+            margin-bottom: 30px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .heart-icon {
+            color: #e53e3e;
+            font-size: 1.2em;
+            animation: heartbeat 2s ease-in-out infinite;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .registration {
+            font-size: 1.2em;
+            color: #718096;
+            background: #f7fafc;
+            padding: 15px 25px;
+            border-radius: 10px;
+            border-left: 4px solid #4299e1;
+            margin-top: 40px;
+            font-weight: 500;
+        }
+
+        .decorative-elements {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, rgba(66, 153, 225, 0.1), rgba(72, 187, 120, 0.1));
+            border-radius: 50%;
+        }
+
+        .decorative-elements::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: -20px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, rgba(237, 137, 54, 0.1), rgba(229, 62, 62, 0.1));
+            border-radius: 50%;
+        }
+
+        .services-highlight {
+            margin-top: 30px;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            color: white;
+        }
+
+        .services-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .services-list {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .display-board {
+                padding: 40px 30px;
+                margin: 10px;
+            }
+            
+            .doctor-name {
+                font-size: 2.5em;
+            }
+            
+            .qualification {
+                font-size: 1.2em;
+            }
+            
+            .emc-logo {
+                width: 150px;
+                height: 50px;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="display-board">
+        <div class="decorative-elements"></div>
+        
+        <div class="emc-logo">
+            EMC
+        </div>
+        
+        <h1 class="doctor-name">Dr. Shivesh Kumar</h1>
+        
+        <p class="qualification">MD Physician P G Diploma Cardiology</p>
+        
+        <p class="designation">Consultant Physician</p>
+        
+        <div class="specialization">
+            <span>Consultant Non Invasive Cardiology</span>
+            <span class="heart-icon">♥</span>
+            <span>at Max Shalimarbagh</span>
+        </div>
+        
+        <div class="services-highlight">
+            <div class="services-title">Specialized Services</div>
+            <div class="services-list">
+                ECG • Echocardiography • Stress Testing • Holter Monitoring<br>
+                Cardiac Risk Assessment • Preventive Cardiology
+            </div>
+        </div>
+        
+        <div class="registration">
+            Registration No. DMC20075
+        </div>
+    </div>
+</body>
+</html>
