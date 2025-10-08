@@ -1,0 +1,10 @@
+wfdb==4.3.0
+tensorflow==2.18.0
+scikit-learn==1.6.1
+matplotlib==3.10.0
+seaborn==0.13.2
+pandas==2.3.0
+numpy==2.0.2
+scipy==1.15.3
+requests==2.32.3
+zipfile36==0.1.3
